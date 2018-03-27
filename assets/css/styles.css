@@ -8,6 +8,10 @@ header {
     border-radius: 5px;
 }
 
+.exercice h2 {
+    margin-bottom: 30px;
+}
+
 #biggerText {
     transition: font-size 0.5s;
 }

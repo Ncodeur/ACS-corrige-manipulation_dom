@@ -15,15 +15,13 @@ function getStyleValue(element, property) {
  */
 
 // Ici on stock trois variables : 
-// * Le bouton qui déclenchera l'action
 // * L'élement texte à changer
 // * La taille par défaut (au chargement) du text (parseFloat permet d'enlever le "px" retourné par la fonction getStyleValue)
-var btnBigger = document.getElementById("setBiggerText");
 var biggerText = document.getElementById("biggerText");
 var defaultTextSize = (getStyleValue(biggerText, 'font-size'));
 
-// Au click du bouton
-btnBigger.addEventListener("click", function() {
+// Au click du texte
+biggerText.addEventListener("click", function() {
     // Si la taille par défaut est différente de la taille actuelle du texte
     if(getStyleValue(biggerText, 'font-size') != defaultTextSize) {
         // alors on remet la taille par défaut
