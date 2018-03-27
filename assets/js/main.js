@@ -118,7 +118,7 @@ document.addEventListener("keydown", function(event) {
     // event.keyCode nous permet de nous retourner l'identifiant de la touche
     // enfoncée. 38 = flèche du haut
     if(event.keyCode == 38) {
-        rectangle.style.top = "10px";
+        rectangle.style.top = "-100px";
     }
 });
 
